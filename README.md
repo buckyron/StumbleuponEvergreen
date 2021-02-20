@@ -2,31 +2,31 @@
 
 Neural Net approach to provide a solution.
 
-Step 1: Analyse the data.
+##Step 1: Analyse the data.
     I had a quick overview of the data. 
     Verified if the dataset is imbalanced. 
     Checked which of the metrics have an impact on the label.
     I find that the boilerplate to be impacting the label.
     
-Step 2: Build a simple model and have a benchmark.
+##Step 2: Build a simple model and have a benchmark.
     Before moving further, I created a Neural Network with an embedding, a lstm and a dense layer.
     Fed the NN with Padded sequence with a basic tensorflow tokeniser.
     Ran the model for 50 epochs.
     Reached an accuracy of 63%.
     Needed to improve.
 
-# The data is not that clean.
+The data is not that clean.
 
-Step 3: Clean the boilerplate data.
+##Step 3: Clean the boilerplate data.
     Remove punctuations, stopwords, numbers, nouns, delimiters etc.
     Map the words to their root words with Lemmatization.
     
-Step 4: Train again but with cleaner data.
+##Step 4: Train again but with cleaner data.
     I trained the same model with cleaner data for the same number of epochs.
     The accuracy climbed to 74%.
     Not bad... But can be better.
     
-Step 5: Use Glove word embeddings.
+##Step 5: Use Glove word embeddings.
     I used the 100d word embeddings of glove.
     Created embedding index and embedding matrix.
     And then passed it to the embedding layer of my model.
@@ -35,7 +35,7 @@ Step 5: Use Glove word embeddings.
     
 The model seemed to overfit to the train dataset. Needed to fix it.
 
-Step 6: Tune those hyperparameters.
+##Step 6: Tune those hyperparameters.
     I added Dropout layers after each layer and played with the percent of dropout.
     I added kernel regularization to the dense layer.
     I changed my optimizer from adam to sgd.
