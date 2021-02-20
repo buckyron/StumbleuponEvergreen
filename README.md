@@ -107,9 +107,9 @@ model.compile(loss='binary_crossentropy',optimizer= tf.keras.optimizers.SGD(lear
     I changed my optimizer from adam to sgd.
     
     Using sgd I had control over the learning rate.
-    Finally at a learning rate of 0.01.
-    Dropout of 0.6 at every layer.
-    and a l2 of 0.01 regularisation.
+    Finally at a learning rate of 0.01,
+    Dropout of 0.6 at every layer
+    and a l2 regulation of 0.01.
     My model achieved 80.08 accuracy.
     
 ## Step 7: Make predictions using the test dataset.
