@@ -4,7 +4,7 @@ Neural Net approach to provide a solution.
 
 ## Step 1: Analyse the data.
     I had a quick overview of the data. 
-    Verified if the dataset is imbalanced. 
+    Verified if the dataset is balanced. 
     Checked which of the metrics have an impact on the label.
     I find that the boilerplate to be impacting the label.
     
